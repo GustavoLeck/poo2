@@ -39,6 +39,26 @@ public class GuitarSpec {
         return topWood;
     }
 
+    public boolean searchGuitar(GuitarSpec specSearch) {
+
+        if (this.getBuilder() != specSearch.getBuilder()) {
+            return false;
+        }
+        if (this.getModel() != specSearch.getModel()) {
+            return false;
+        }
+        if (this.getType() != specSearch.getType()) {
+            return false;
+        }
+        if (this.getBackWood() != specSearch.getBackWood()) {
+            return false;
+        }
+        if (this.getTopWood() != specSearch.getTopWood()) {
+            return false;
+        }
+        return true;
+    }
+
     public String toString() {
         return "{".concat(this.builder.toString())
                 .concat(", ")

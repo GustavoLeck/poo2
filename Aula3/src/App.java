@@ -8,19 +8,20 @@ public class App {
         Inventory inventoryGuitars = new Inventory();
 
         System.out.println("    -> Guitarra 1");
-        inventoryGuitars.addGuitar("123", 100, Builder.FENDER, Model.STRATOCASTER, Type.ELETRIC, BackWood.BASSWOOD,
+        GuitarSpec sepc1 = new GuitarSpec(Model.STRATOCASTER, Builder.FENDER, Type.ELETRIC, BackWood.BASSWOOD,
                 TopWood.ALDER);
+        inventoryGuitars.addGuitar("123", 100, sepc1);
 
         System.out.println("    -> Guitarra 2");
-        inventoryGuitars.addGuitar("123", 100, Builder.GIBSON, Model.LES_PAUL, Type.ELETRIC, BackWood.BASSWOOD,
+        GuitarSpec spec2 = new GuitarSpec(Model.LES_PAUL, Builder.GIBSON, Type.ELETRIC, BackWood.BASSWOOD,
                 TopWood.ALDER);
-
+        inventoryGuitars.addGuitar("123", 100, spec2);
         System.out.println("-> Guitarras adicionadas ao estoque: ");
         System.out.println(inventoryGuitars.toString());
 
-        Guitar parametrosGuitarra = new Guitar("456", 250, Builder.GIBSON, Model.LES_PAUL, Type.ELETRIC,
-                BackWood.BASSWOOD,
+        GuitarSpec specSearch = new GuitarSpec(Model.LES_PAUL, Builder.GIBSON, Type.ELETRIC, BackWood.BASSWOOD,
                 TopWood.ALDER);
+        Guitar parametrosGuitarra = new Guitar("456", 250, specSearch);
         System.out.println("Guitarra sendo pesquisada: ".concat(parametrosGuitarra.toString()));
 
         Guitar guitarFounded = inventoryGuitars.guitarSearch(parametrosGuitarra);
