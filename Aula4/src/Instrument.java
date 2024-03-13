@@ -25,4 +25,21 @@ public abstract class Instrument {
     public InstrumentSpec getSpec() {
         return this.InstrumentSpec;
     }
+
+    public String toString() {
+        return "{".concat(this.serialNumber)
+                .concat(", ")
+                .concat(this.price.toString())
+                .concat(", ")
+                .concat(this.InstrumentSpec.getBackWood().toString())
+                .concat(", ")
+                .concat(this.InstrumentSpec.getBuilder().toString())
+                .concat(", ")
+                .concat(this.InstrumentSpec.getModel().toString())
+                .concat("}")
+                .concat(this.InstrumentSpec.getTopWood().toString())
+                .concat("}")
+                .concat(this.InstrumentSpec.getType().toString())
+                .concat("}");
+    }
 }

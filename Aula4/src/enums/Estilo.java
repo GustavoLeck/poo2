@@ -1,6 +1,6 @@
 package enums;
 
-public enum Style {
+public enum Estilo {
     INLAY,
     ELETRIC;
 
