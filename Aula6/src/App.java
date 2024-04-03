@@ -23,7 +23,7 @@ public class App {
         patoBorracha.performFly();
         patoBorracha.performQuack();
 
-        System.out.println(" - Adicionando asas no de avião no pato de borracha...");
+        System.out.println(" - Adicionando asas de avião no pato de borracha...");
 
         patoBorracha.setFlyBehavior(new FlyWithWings());
         patoBorracha.performFly();
