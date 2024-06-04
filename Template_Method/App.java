@@ -1,37 +1,37 @@
-package Template_Method;
+// package Template_Method;
 
-public class App {
-    public static void main(String[] args) throws Exception {
+// public class App {
+// public static void main(String[] args) throws Exception {
 
-        ManipulaMaiusculo maiusculo = new ManipulaMaiusculo();
+// ManipulaMaiusculo maiusculo = new ManipulaMaiusculo();
 
-        maiusculo("TesteMaiusculoTeste");
+// maiusculo("TesteMaiusculoTeste");
 
-        maiusculo.LeTexto();
+// maiusculo.LeTexto();
 
-        maiusculo.TransformaTexto();
+// maiusculo.TransformaTexto();
 
-        maiusculo.MostraTextoTransformado();
+// maiusculo.MostraTextoTransformado();
 
-        ManipulaMinusculo minusculo = new ManipulaMinusculo();
+// ManipulaMinusculo minusculo = new ManipulaMinusculo();
 
-        minusculo("TesteMinusculoTeste");
+// minusculo("TesteMinusculoTeste");
 
-        minusculo.LeTexto();
+// minusculo.LeTexto();
 
-        minusculo.TransformaTexto();
+// minusculo.TransformaTexto();
 
-        minusculo.MostraTextoTransformado();
+// minusculo.MostraTextoTransformado();
 
-        ManipulaInverte inverte = new ManipulaInverte();
+// ManipulaInverte inverte = new ManipulaInverte();
 
-        minusculo("testeInverteTeste");
+// minusculo("testeInverteTeste");
 
-        inverte.LeTexto();
+// inverte.LeTexto();
 
-        inverte.TransformaTexto();
+// inverte.TransformaTexto();
 
-        inverte.MostraTextoTransformado();
+// inverte.MostraTextoTransformado();
 
-    }
-}
+// }
+// }
